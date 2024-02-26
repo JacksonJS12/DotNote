@@ -14,10 +14,10 @@ namespace DotNote.Web
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>().HasKey(u => u.UserId);
-            modelBuilder.Entity<Note>().HasKey(n => n.NoteId);
-            modelBuilder.Entity<Group>().HasKey(g => g.GroupId);
-            modelBuilder.Entity<Update>().HasKey(u => u.UpdateId);
+            modelBuilder.Entity<User>().HasKey(u => u.Id);
+            modelBuilder.Entity<Note>().HasKey(n => n.Id);
+            modelBuilder.Entity<Group>().HasKey(g => g.Id);
+            modelBuilder.Entity<Update>().HasKey(u => u.Id);
 
             modelBuilder.Entity<Note>()
                 .HasOne(n => n.User)

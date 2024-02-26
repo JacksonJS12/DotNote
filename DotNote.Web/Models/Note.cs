@@ -2,7 +2,12 @@
 {
     public class Note
     {
-        public Guid NoteId { get; set; }
+        public Note()
+        {
+            Id = Guid.NewGuid();
+        }
+
+        public Guid Id { get; set; }
         public string Title { get; set; }
         public string Subtitle { get; set; }
         public string Text { get; set; }
@@ -14,7 +19,7 @@
         public User User { get; set; }
     }
 
-    public enum NoteStatus
+        public enum NoteStatus
     {
         Active,
         Deleted

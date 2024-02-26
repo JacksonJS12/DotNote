@@ -2,7 +2,12 @@
 {
     public class Update
     {
-        public Guid UpdateId { get; set; }
+        public Update()
+        {
+            Id = Guid.NewGuid();
+        }
+
+        public Guid Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime CreatedAt { get; set; }
