@@ -8,9 +8,7 @@ namespace DotNote.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-           builder
-                .Property(u => u.CreatedAt)
-                .HasDefaultValueSql("GETDATE()");
+           
         }
     }
 }

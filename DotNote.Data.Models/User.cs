@@ -18,10 +18,6 @@ namespace DotNote.Data.Models
         public Guid Id { get; set; }
 
         [Required]
-        [StringLength(MaxUsernameLength, MinimumLength = MinUsernameLength)]
-        public string Username { get; set; }
-
-        [Required]
         [StringLength(MaxFirstNameLength, MinimumLength = MinFirstNameLength)] 
         public string FirstName { get; set; } = null!;
 

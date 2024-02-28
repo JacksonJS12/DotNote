@@ -19,9 +19,7 @@ namespace DotNote.Data.Configurations
                 .Property(n => n.IsActive)
                 .HasDefaultValue(true);
 
-            builder
-                .Property(n => n.CreatedAt)
-                .HasDefaultValueSql("GETDATE()");
+           
         }
     }
 }
