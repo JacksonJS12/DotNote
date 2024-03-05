@@ -74,3 +74,4 @@ navs.forEach((nav) => {
 });
 
 renderCalendar();
+

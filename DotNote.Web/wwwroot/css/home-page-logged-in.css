@@ -7,10 +7,10 @@
 }
 
 h1 {
-    font-weight: 600;
-    text-align: center;
+    font-weight: 800;
+    text-align: left;
     color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
 }
 
 h3 {
@@ -18,9 +18,11 @@ h3 {
 }
 
 .calendar {
-    margin: auto;
-    width: 98%;
-    max-width: 380px;
+    position: relative;
+    top: 10px;
+    left: 1050px;
+    width: 90%;
+    max-width: 360px;
     padding: 1rem;
     background: #fff;
     border-radius: 10px;
